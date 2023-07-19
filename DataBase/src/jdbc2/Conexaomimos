@@ -1,0 +1,3 @@
+Banco url = jdbc:mysql://localhost:3306/mimos?verifyServerCertificate=false&useTimezone=true&serverTimezone=UTC&useSSL=false
+Banco usuario = root
+Banco senha = gripenng

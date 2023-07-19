@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="AutoPro">
+	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+	<mapping-file>META-INF/orm.xml</mapping-file>
+	<class>Estoque.Produto</class>
+	<class>Relacio.Assento</class>
+	<class>Relacio.Cliente</class>
+	<class>UmpraMuitos.ItemPedido</class>
+	<class>UmpraMuitos.Pedido</class>
+	<class>MuitosparaMuitos.Sobrinhos</class>
+	<class>MuitosparaMuitos.Tios</class>
+	<class>MuitosparaMuitos.Corrida</class>
+	<class>MuitosparaMuitos.Piloto</class>
+	<class>Estoque.Funcionarios</class>
+	<class>Estoque.Fornecedor</class>
+	<class>Estoque.Endereco</class>
+	<properties>
+	<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+	<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/auto"/>
+	<property name="javax.persistence.jdbc.password" value="gripenng"/>
+	<property name="javax.persistence.jdbc.user" value="root"/>
+	
+	
+	 <property name="hibernate.dialect"  value="org.hibernate.dialect.MySQL57Dialect"/>
+	 <property name="hibernate.show_sql" value="false"/>
+	 <property name="hibernate.format_sql" value="true"/>
+	 <property name="hibernate.hbm2ddl.auto" value="update"/>
+	</properties>
+	</persistence-unit>
+</persistence>
